@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matriz</title>
+</head>
+<body>
+    <script>
+        var matriz = [
+            [-100, 8, 2],
+            [2, 4345678, 5],
+            [4, 6, 5]
+        ]
+
+        var menor = matriz[0][0]
+
+        var maior = [0][0]
+
+        for(var l = 0; l < matriz.length; l++){
+            for(var c = 0; c < matriz[l].length; c++ ){
+
+                if(matriz[l][c] > maior) {
+
+                    maior = matriz[l][c]
+
+                }else if(matriz[l][c] < menor){
+
+                menor = matriz[l][c]
+                }
+
+        }
+    }
+
+            console.log(maior)
+            console.log(menor)
+    </script>
+</body>
+</html>
